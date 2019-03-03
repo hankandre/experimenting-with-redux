@@ -42,3 +42,4 @@ Here are the criteria:
 3. Write at least one meaningful test for your implementation.
    - Tests are, in essence, a form of documentation. Ask yourself, "What would be valuable
      for me to know when I'm using this in the future?"
+   - Tests can be run with the `yarn test` or `npm test` commands, depending on whichever you're using.
