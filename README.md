@@ -3,7 +3,8 @@
 Learning Redux often feels hard. This is often compounded by the fact that it'll
 be characterized as easy, or people use large, unhelpful, terms to describe it.
 I believe the problem often is that we mix-up the actual implementation of Redux
-with the rationale for creating Redux.
+with the rationale for creating Redux. It's just a little to Computer Science-y for
+the rest of us.
 
 On the most fundamental level Redux provides you with a `state` object with some helpers
 for accessing it and modifying properties on it (with `reducers` and `action`s).
@@ -43,3 +44,33 @@ Here are the criteria:
    - Tests are, in essence, a form of documentation. Ask yourself, "What would be valuable
      for me to know when I'm using this in the future?"
    - Tests can be run with the `yarn test` or `npm test` commands, depending on whichever you're using.
+
+---
+
+### Yearning for more?
+
+Now that you have a Redux of your very own, use it. This means that we'll need to create
+our own way of implementing Redux into our app. Remember, Redux is framework/library agnostic
+it can be used in an Angular 5+, Vue (although you'd probably use [Vuex](https://vuex.vuejs.org/), instead),
+or whatevs. We need to create our very own version of React Redux. This means we need:
+
+1. A way to integrate our newly created `store` into our app.
+   - The [documentation](https://react-redux.js.org/introduction/quick-start) might be a good place to start
+   - Familiarizing yourself with [context](https://reactjs.org/docs/context.html) within a React app will probably help, too.
+2. A way to access/update properties on `state` within a component (i.e. `mapStateToProps` and `mapDispatchToProps`).
+   - We typically do this with the `connect` module from React Redux.
+3. Write a handful of tests for your new component.
+   - Validate that `state` changes
+   - Ensure that your component re-renders.
+   - Is there anything more of value that you think a test could provide?
+
+---
+
+### [Lasciate ogne speranza, voi ch'intrate](<https://en.wikipedia.org/wiki/Inferno_(Dante)#Vestibule_of_Hell>)
+
+If you chose an HOC pattern for your `connect` function, attempt to create
+a solution that uses the new Hooks API.
+
+Beware, that this is new ground for us all. React Redux doesn't even have an API for this, yet. You'd be treading new ground, which means you'll be largely alone, apart from us, of course 🙂.
+
+This may mean your tests break. I'm sure we'll all be far too impressed with what you've done to care.
