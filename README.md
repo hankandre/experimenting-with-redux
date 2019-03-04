@@ -31,7 +31,7 @@ npm install
 
 ## Challenge
 
-Let's attempt to create our own implementation of Redux! Just a basic implementation will do.
+Attempt to create your own implementation of Redux! Just a basic implementation will do.
 Here are the criteria:
 
 1. Your exported Redux module should have a `createStore` function
@@ -49,12 +49,13 @@ Here are the criteria:
 
 ### Yearning for more?
 
-Now that you have a Redux of your very own, use it. This means that we'll need to create
-our own way of implementing Redux into our app. Remember, Redux is framework/library agnostic
-it can be used in an Angular 5+, Vue (although you'd probably use [Vuex](https://vuex.vuejs.org/), instead),
-or whatevs. We need to create our very own version of React Redux. This means we need:
+Now that you have a Redux of your very own, use it. This means that you'll need to create
+your own way of implementing Redux into our app. Remember, Redux is framework/library agnostic
+it can be used in an Angular 5+, Vue (although you'd probably use [Vuex](https://vuex.vuejs.org/), instead), or whatevs.
 
-1. A way to integrate our newly created `store` into our app.
+Essentially, you'll need to create your own implementation of React Redux (but wayyyyy lighter). This means you'll need:
+
+1. A way to integrate your newly created `store` into your app.
    - The [documentation](https://react-redux.js.org/introduction/quick-start) might be a good place to start
    - Familiarizing yourself with [context](https://reactjs.org/docs/context.html) within a React app will probably help, too.
 2. A way to access/update properties on `state` within a component (i.e. `mapStateToProps` and `mapDispatchToProps`).
@@ -71,6 +72,6 @@ or whatevs. We need to create our very own version of React Redux. This means we
 If you chose an HOC pattern for your `connect` function, attempt to create
 a solution that uses the new Hooks API.
 
-Beware, that this is new ground for us all. React Redux doesn't even have an API for this, yet. You'd be treading new ground, which means you'll be largely alone, apart from us, of course 🙂.
+Beware, that this is new ground for us all. React Redux doesn't even have an API for this, yet. You'd be treading new ground, which means you'll be largely alone. Apart from us, of course 🙂.
 
-This may mean your tests break. I'm sure we'll all be far too impressed with what you've done to care.
+This may, but not necessarily, mean your tests break. I'm sure we'll all be far too impressed with what you've done to care.
